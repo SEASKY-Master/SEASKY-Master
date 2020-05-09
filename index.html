@@ -10,7 +10,8 @@
     height: auto;
     border-radius: 5px;
     background: #FFFFFF url("image/background.jpg") center;
-	background-size: 100% 100%;
+    background-size: 100% 100%;
+    box-sizing: border-box;
 }
 #Top_title {
     position: relative;
@@ -49,12 +50,20 @@
     height: auto;
     margin: 0px auto;
 }
-.Main_to_line {
-    width: auto;
+#Main_to_line1 {
+    width: 850px;
     height: auto;
     font-size: 20px;
-    display: inline-block;
     margin-left: 0px;
+	float:left;
+    vertical-align: top;
+}
+#Main_to_line2 {
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+    margin-left: 0px;
+	float:right;
     vertical-align: top;
 }
 .readme_test {
@@ -240,7 +249,7 @@ li {
     margin: 0px auto;
     border-radius: 5px;
     text-align: center;
-	font-size:12px;
+    font-size: 12px;
 }
 #end p {
     color: #FFFFFF;
@@ -263,7 +272,7 @@ li {
     </div>
   </div>
   <div id="Main_text">
-    <div class="Main_to_line">
+    <div id="Main_to_line1">
       <div class="readme_test">
         <p><strong><em>开源作品：</em></strong></p>
         <ul>
@@ -316,7 +325,7 @@ li {
         </ul>
       </div>
     </div>
-    <div class="Main_to_line">
+    <div id="Main_to_line2">
       <div class="right_side">
         <div>
           <div class="inline_block"> <img src="image/qq_number.jpg" alt="" width="120px"> </div>
