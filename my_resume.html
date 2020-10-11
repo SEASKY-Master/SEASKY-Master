@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>刘威</title>
+<link href="mx_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="icon/demo.css">
+<link rel="stylesheet" href="icon/iconfont.css">
+<style>
+li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+code, kbd, pre, samp {
+    font-family: couriernew, courier, monospace;
+}
+small {
+    font-size: 12px;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+legend {
+    color: #000;
+}
+fieldset, img {
+    border: 0;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#background {
+    width: 100%;
+    height: auto;
+    background: #F0F8FF url('image/background.jpg') no-repeat center;
+    /*	background-color: #F0F8FF*/
+    background-size: 100% 100%;
+    overflow: auto;
+    zoom: 1;
+}
+#Main_text {
+    width: 960px;
+    height: auto;
+    margin: 0px auto;
+    overflow: auto;
+    zoom: 1;
+}
+#Main_to_line1 {
+    width: 610px;
+    height: auto;
+    font-size: 18px;
+    margin-left: 0px;
+    float: left;
+    vertical-align: top;
+    overflow: auto;
+    zoom: 1;
+}
+#Main_to_line2 {
+    width: 350px;
+    height: auto;
+    font-size: 18px;
+    margin-left: 0px;
+    float: right;
+    vertical-align: top;
+    overflow: auto;
+    zoom: 1;
+}
+.readme_test {
+    width: 610px;
+    height: auto;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    overflow: auto;
+    zoom: 1;
+}
+.right_side {
+    width: 330px;
+    height: auto;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    overflow: auto;
+    zoom: 1;
+}
+.inline_block {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    overflow: auto;
+    zoom: 1;
+}
+.text_line {
+    background: #3cb9ff;
+    width: 300px;
+    height: 2px;
+    margin: 0px auto;
+    overflow: auto;
+    zoom: 1;
+}
+.github_img {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/github1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.github_img:hover {
+    background-image: url('logo/github2.png');
+    background-size: 100% 100%;
+}
+.git_img {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/gitee1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.git_img:hover {
+    background-image: url('logo/gitee2.png');
+    background-size: 100% 100%;
+}
+.csdn {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/csdn1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.csdn:hover {
+    background-image: url('logo/csdn2.png');
+    background-size: 100% 100%;
+}
+.email {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/zhihu1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.email:hover {
+    background-color: #1296db;
+    background-image: url('logo/zhihu2.png');
+    background-size: 100% 100%;
+}
+.bilibili {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/bilibili1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.bilibili:hover {
+    background-image: url('logo/bilibili2.png');
+    background-size: 100% 100%;
+}
+.yingyong {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/geren1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.yingyong:hover {
+    background-image: url('logo/geren1.png');
+    background-size: 100% 100%;
+}
+.software {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/cangku1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.software:hover {
+    background-image: url('logo/cangku1.png');
+    background-size: 100% 100%;
+}
+.youqing {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/jineng1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.youqing:hover {
+    background-image: url('logo/jineng1.png');
+    background-size: 100% 100%;
+}
+.zhengming {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-image: url('logo/zhenming1.png');
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+li {
+    list-style: none;
+    list-style-image: url('logo/sanjiaoxing.svg');
+}
+#right_test {
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    overflow: auto;
+    zoom: 1;
+}
+.right_test_title b {
+    color: #3cb9ff;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.readme_test li {
+    font-size: 14px;
+}
+#yingyong_test {
+    overflow: auto;
+    zoom: 1;
+}
+#end {
+    width: 960px;
+    height: 5px;/*不填加end*/
+    margin: 0px auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    overflow: auto;
+    zoom: 1;
+}
+#end p {
+    color: #ffffff;
+}
+.xiangmu {
+    height: 100%;
+    margin: 0px;
+    zoom: 1;
+}
+</style>
+</head>
+
+<body>
+<div id="background">
+  <div id="Main_text">
+    <div id="Main_to_line1">
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>湖南大学数学建模竞赛</b></font> <font style="float:right"><b>2018/4/29-2018/5/1</b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li> 方案提出，方案策划，方案解决。 </li>
+        </ul>
+      </div>
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>RoboMaster2019机甲大师赛分区赛</b></font> <font style="float:right"><b>2018-2019</b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li><b>哨兵机器人</b>
+            <ul>
+              <li>使用TIM定时器和CAN通信以及PID对电机进行速度环+电流环控制，或位置环+速度环控制；</li>
+              <li>使用TIM定时器封装底盘，云台任务，使用STM32的硬件随机数控制电机位置，达到随机移动的目的；</li>
+              <li>使用中断检测光电对管输出，检测轨道边沿，同时限定随机数产生范围；</li>
+              <li>使用串口+CRC校验读取裁判系统数据。</li>
+            </ul>
+          </li>
+          <li><b>其他兵种(模块程序)</b>
+            <ul>
+              <li>OLED的SPI驱动程序；</li>
+              <li>INA226的IIC驱动程序，以及功率测量模块硬件制作;</li>
+              <li>RoboMaster裁判系统通信程序；</li>
+              <li>Mini-PC的通信协议制定以及编写。</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>基于无线通信技术与九轴陀螺仪姿态融合的电子教鞭实现</b></font> <font style="float:right"><b>2019/5-2020/5</b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li>使用STM32F405RGT6读取BMI088原始数据，并使用Mahony进行姿态解算；</li>
+          <li>使用USART(无线模式-蓝牙模块)和USB-HID和电脑通信；</li>
+          <li>使用BMI088的角速度数据，模拟鼠标的运动，实现空中鼠标；</li>
+        </ul>
+      </div>
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>RoboMaster2020机甲大师赛对抗赛</b></font> <font style="float:right"><b>2019-至今</b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li><b>步兵机器人&哨兵机器人(程序独立编写)</b>
+            <ul>
+              <li>使用TIM定时器和CAN通信以及PID对GM6020(位置+速度)，M2006(位置+速度)，M3508(速度+电流)进行封装；</li>
+              <li>使用FreeRTOS创建imu_task、chassis_task、gimbal_task、fire_task、visual_task等，各个任务之间有较高的独立性；</li>
+              <li>使用串口、CRC和RoboMaster裁判系统进行通信，并制定湖南大学RoboMaster团队统一的串口通信协议，含CRC8、CRC16数据校验；</li>
+              <li>使用CAN通信或USART和自研BMI088通信，使用CAN通信或USART和自研超级电容通信；</li>
+              <li>使用SPI和ADC驱动自制OLED，并编写OLED的GUI界面程序。</li>
+            </ul>
+          </li>
+          <li><b>其他模块制作(独立制作，硬件、软件)</b>
+            <ul>
+              <li>基于RISC-V-K210的低成本AI视觉方案，运行Yolo模型(涉及K210-SDK、深度学习Yolo(了解)、Tensorflow(了解)、Kreas等(了 解))；</li>
+              <li>BMI088六轴姿态传感器，使用Mahony进行姿态解算，Yaw轴漂移3-5分钟/度，数据打包输出CAN、USART；</li>
+              <li>超级电容控制器，使用STM32G474的Hrtim输出互补PWM驱动UCC27211进而驱动同步BUCK电路，使用INA226获取电流、电压、功率数据，进而进行功率闭环控制，同时使用CAN和USART进行数据通信；</li>
+              <li>带ADC按键的OLED模块，编写驱动，并编写GUI界面程序。</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>除项目外自身兴趣</b></font> <font style="float:right"><b>2017/10-至今</b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li>基于STM32F103+51单片机智能循迹小车程序编写，以及基于51单片机日历-时钟系统程序编写；</li>
+          <li>基于SCL3300+STM32F103实现高精度倾角测量程序编写；</li>
+          <li>基于STM32F405RGT6的有线+无线机械键盘硬件、软件设计，使用PWM控制WS2812B灯珠实现RGB灯效，可以对应控制每个灯的颜色；使用按键扫描方式检测按键，包括长短按识别，使用USB-HID或无线HID蓝牙模块和电脑通信，实现键盘功能，使用体验和普通键盘无任何区别，长时间测试稳定。</li>
+        </ul>
+      </div>
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>RoboMaster2021机甲大师赛分对抗</b></font> <font style="float:right"><b>2020/10-2021</b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li>RoboMaster电控组组长</li>
+        </ul>
+      </div>
+      <div class="readme_test">
+        <div class = "xiangmu"> <font style="float:left"><b>主要技能</b></font> <font style="float:right"><b></b></font> </div>
+        <div style="clear:both;"></div>
+        <ul>
+          <li>使用C语言开发STM32程序，使用Html5编写个人博客，使用Python语言运行Openmv，了解汇编语言；</li>
+          <li>使用MDK软件完成基于STM32的ARM构架CPU、FreeRTOS嵌入式实时操作系统搭建并完成完整步兵、哨兵机器人等程序编写；</li>
+          <li>使用RISC-V-K210官方SDK开发K210完成yolo 20分类目标检测，了解Linux；</li>
+          <li>使用Altium Designer软件进行多款PCB设计，较熟练的使用PADS进行PCB设计。</li>
+        </ul>
+      </div>
+    </div>
+    <div id="Main_to_line2">
+      <div class="right_side">
+        <div>
+          <div class="inline_block"> 
+            <!--			  /*svg个人图片*/--> 
+            <img src="image/liuwei.jpg" alt="" width="120px" /> </div>
+          <div class="inline_block">
+            <div>
+              <ul>
+                <li>GITHUB开源</li>
+                <li>B站UP主</li>
+                <li>责任心强</li>
+                <li>吃苦耐劳</li>
+                <li>敢于担当</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text_line"></div>
+        <div> <a href="https://github.com/SEASKY-Master" rel="external nofollow" title="GitHub" target="_blank"> <i
+                class="github_img"></i> </a> <a href="https://gitee.com/LIUWEI2544907929/dashboard/projects"
+              rel="external nofollow" title="git" target="_blank"> <i class="git_img"></i> </a> <a
+              href="https://me.csdn.net/qq_42754856" rel="external nofollow" title="csdn" target="_blank"> <i
+                class="csdn"></i> </a> <a href="https://www.zhihu.com/people/llajbsb" rel="external nofollow" title="email"
+              target="_blank"> <i class="email"></i> </a> <a
+              href="https://space.bilibili.com/317148586?spm_id_from=333.788.b_765f7570696e666f.1"
+              rel="external nofollow" title="bilibili" target="_blank"> <i class="bilibili"></i> </a> </div>
+      </div>
+      <div class="right_side">
+        <div class="right_test">
+          <div class="right_test_title"> <i class="yingyong"></i><b>个人信息</b> </div>
+          <div class="text_line"></div>
+          <div class="yingyong_test">
+            <ul>
+              <li> <font color="#0396FF" size="3">姓&emsp;&emsp;名：刘&emsp;&emsp;&emsp;威</font> </li>
+              <li> <font color="#0396FF" size="3">电&emsp;&emsp;话：152-7317-1822</font> </li>
+              <li> <font color="#0396FF" size="3">邮&emsp;&emsp;箱：liuwei_seasky@163.com</font> </li>
+              <li> <font color="#0396FF" size="3">学&emsp;&emsp;历：湖南大学-本科</font> </li>
+              <li> <font color="#0396FF" size="3">专&emsp;&emsp;业：电气工程及其自动化</font> </li>
+              <li> <font color="#0396FF" size="3">籍&emsp;&emsp;贯：湖北省-恩施州-利川市</font> </li>
+              <li> <font color="#0396FF" size="3">出生年月：1998/08/26</font> </li>
+              <li> <font color="#0396FF" size="3">期望职位：嵌入式软件工程师</font> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <div class="right_test">
+          <div class="right_test_title"> <i class="software"></i><b>开源仓库(点击跳转)</b> </div>
+          <div class="text_line"></div>
+          <div class="yingyong_test">
+            <ul>
+              <li><a href="https://github.com/SEASKY-Master/SEASKY_DIYer" target="blank"><font color="#0396FF" size="3">简单硬件</font></a></li>
+              <li><a href="https://github.com/SEASKY-Master/OpenMV" target="blank"><font color="#0396FF" size="3">OpenMV系列</font></a></li>
+              <li><a href="https://github.com/SEASKY-Master/BMI088_Master" target="blank"><font color="#0396FF" size="3">BMI088六轴姿态传感器</font></a></li>
+              <li><a href="https://github.com/SEASKY-Master/keyboard" target="blank"><font color="#0396FF" size="3">SEASKY机械键盘</font></a></li>
+              <li><a href="https://github.com/SEASKY-Master/SEASKY_K210" target="blank"><font color="#0396FF" size="3">K210硬件(四层板)</font></a></li>
+              <li><a href="https://github.com/SEASKY-Master/Yolo-for-k210" target="blank"><font color="#0396FF" size="3">Yolo-for-k210</font></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <div class="right_test">
+          <div class="right_test_title"> <i class="youqing"></i><b>主要奖项&技能</b> </div>
+          <div class="text_line"></div>
+          <div class="yingyong_test">
+            <ul>
+              <li><font color="#0396FF" size="3">全国计算机等级二级</font></li>
+              <li><font color="#0396FF" size="3">湖南大学数学建模竞赛二等奖</font></li>
+              <li><font color="#0396FF" size="3">湖南大学一等奖学金</font></li>
+              <li><font color="#0396FF" size="3">湖南大学三好学生</font></li>
+              <li><font color="#0396FF" size="3">RoboMaster哨兵机器人</font></li>
+              <li><font color="#0396FF" size="3">RoboMaster2019机甲大师赛分区赛三等奖</font></li>
+              <li><font color="#0396FF" size="3">基于无线通信技术与九轴陀螺仪姿态融合的电子教鞭实现</font></li>
+              <li><font color="#0396FF" size="3">RoboMaster2020机甲大师赛对抗赛（线上）嵌入式-二等奖</font></li>
+              <li><font color="#0396FF" size="3">RoboMaster2020机甲大师赛对抗赛（线上）步兵-三等奖</font></li>
+              <li><font color="#0396FF" size="3">RoboMaster2020机甲大师赛对抗赛（线上）三等奖</font></li>
+              <li><font color="#0396FF" size="3">湖南省智能车-四轮组-二等奖</font></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <div class="right_test">
+          <div class="right_test_title"> <i class="zhengming"></i><b>实物图片证明(点击跳转)</b> </div>
+          <div class="text_line"></div>
+          <div class="yingyong_test">
+            <ul>
+              <li> <a
+                    href="https://pan.baidu.com/s/1sJUYlfuednObidKyukFwIQ?tdsourcetag=s_pctim_aiomsg&qq-pf-to=pcqq.group#list/path=%2F"
+													 target="blank"><font color="#0396FF" size="3">实物图片简单汇总</font></a> </li>
+              <li> <a
+                    href="https://pan.baidu.com/s/1sJUYlfuednObidKyukFwIQ?tdsourcetag=s_pctim_aiomsg&qq-pf-to=pcqq.group#list/path=%2F"
+													 target="blank"><font color="#0396FF" size="3">BMI088设计说明</font></a> </li>
+              <li> <a
+                    href="https://pan.baidu.com/s/1sJUYlfuednObidKyukFwIQ?tdsourcetag=s_pctim_aiomsg&qq-pf-to=pcqq.group#list/path=%2F"
+													 target="blank"><font color="#0396FF" size="3">超级电容设计说明</font></a> </li>
+              <li> <a
+                    href="https://pan.baidu.com/s/1sJUYlfuednObidKyukFwIQ?tdsourcetag=s_pctim_aiomsg&qq-pf-to=pcqq.group#list/path=%2F"
+													 target="blank"><font color="#0396FF" size="3">K210设计说明</font></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="end"> </div>
+</div>
+</body>
+</html>
