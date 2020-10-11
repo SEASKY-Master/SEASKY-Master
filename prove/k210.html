@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>seasky_k210</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>SEASKY-K210-YOLO-DEMO</h1>
+<h3><strong>@版权所有-&gt;刘威</strong></h3>
+<h3><strong>LICENSE:</strong> <strong>MIT License</strong></h3>
+<h3>个人博客：<a href="https://seasky-master.github.io/SEASKY-Master/">https://seasky-master.github.io/SEASKY-Master/</a></h3>
+<p>代码基于<code>Kendryte K210 standalone SDK</code>开发、有修改 SDK 中部分代码。</p>
+<p>除 SDK 外的代码位于<code>xx/src/hello_world</code>,如果你需要使用自己的代码可以删除 hello_world 目录下的代码，然后将自己代码复制到该目录。
+<img src="images/seasky0.jpg"></p>
+<p>下面开始进入正题</p>
+<h2>硬件设计</h2>
+<ul>
+<li><a href="https://github.com/SEASKY-Master/SEASKY_K210">SEASKY-K210</a></li>
+</ul>
+<p><img src="images/seasky_k210_5.PNG">
+  <img src="images/seasky_k210_6.PNG">
+  <img src="images/seasky_k210_5.jpg"></p>
+<h2>Windows 命令行开发环境搭建</h2>
+<ol>
+<li>下载 <a href="https://cmake.org/download/">cmake V3.0</a>之后的 Windows 版本，把 cmake 安装到 D:\cmake 目录，并把 D:\cmake\bin 目录添加到 PATH 环境变量。</li>
+<li>
+<p>打开一个新的 cmd 窗口，输入 <code>cmake –version</code> 命令，若看到如下信息说明设置正确。
+   <img src="images/seasky6.jpg"></p>
+</li>
+<li>
+<p>从<a href="https://github.com/kendryte/kendryte-gnu-toolchain/releases">Kendryte Github</a>下载 Windows 版本工具链。 打开网页后展开 Assets 可看到下载链接。
+   <img src="images/seasky7.jpg"></p>
+</li>
+<li>
+<p>配置环境变量
+   <img src="images/seasky8.jpg"></p>
+</li>
+<li>
+<p>重新打开一个 cmd 窗口，输入 <code>riscv64-unknown-elf-gcc –v</code>命令，看到如下信息说明编译器设置正确。
+   <img src="images/seasky9.jpg">
+   到此开发环境搭建完成</p>
+</li>
+<li>
+<p>同时你还需要安装win下cmake依赖的编译工具、否则你将无法使用make，因此你还需要安装<code>MingW</code>，安装过程自己百度一下</p>
+</li>
+</ol>
+<h2>源码编译（win）</h2>
+<p>注意：开始之前你需要删除 build 目录，同理如果你将完整的正常的代码复制到其他目录，然后重新编译，也需要先删除 build 目录</p>
+<ol>
+<li>打开 cmd 窗口</li>
+<li>cd 到源码目录</li>
+<li>使用<code>mkdir build</code>创建目录</li>
+<li>使用<code>cd build</code>跳转到<code>build</code>目录</li>
+<li>
+<p>运行<code>cmake</code></p>
+<pre><code>cmake .. –DPROJ=hello_world –G “MinGW Makefiles”
+</code></pre>
+
+<p><img src="images/seasky1.jpg">
+如果输出以下结果正常
+<img src="images/seasky2.jpg"></p>
+</li>
+<li>
+<p>在<code>build</code>目录下编译</p>
+<pre><code>make -j
+</code></pre>
+
+<p><img src="images/seasky3.jpg"></p>
+<p>编译后 build 目录下会生成<code>hello_world.bin</code>文件</p>
+</li>
+<li>
+<p>使用 k-flash-gui 下载<code>hello_world.bin</code>到开发板
+<img src="images/seasky4.jpg"></p>
+</li>
+<li>
+效果展示
+<img src="images/seasky_img.png">
+</li>
+</ol>
+<h2>文本编辑-修改代码</h2>
+<ol>
+<li>你可以使用几乎任何文本编辑器修改代码，因为编译是依赖于命名行、<code>cmake</code>和<code>toolchain</code>进行编译的,所以你可以选择你常用的代码编辑器去修改它。</li>
+<li>推荐使用<code>Visual Studio Code</code></li>
+<li>
+<p>如果你的 LCD 出现反色的现象
+请注释掉以下内容</p>
+<pre><code>     for(i = 0; i &lt; tx_len; i++)
+     {
+         buf[i] = buf[i] ^ 0xFFFFFFFF;
+     }
+</code></pre>
+
+</li>
+</ol>
+<p>该代码位于 spi.c 第 425 到第 428 行
+<code>./lib/drivers/spi.c</code>
+<img src="images/seasky5.jpg"></p>
+<ol>
+<li>注意，直接修改宏定义，不能直接改为 KD233 适用的代码</li>
+<li>代码支持 Widora 的 k210 板子、speed 的部分板子（当然颜色应该是反色的，因为他们都是使用的 2.4 寸及以上的 LCD，反色情况参照步骤 3)</li>
+<li>代码识别图像尺寸为 320*224(深度学习小白，不会改训练模型的结构,他的 image-size 必须是 32 的倍数，不然会报错，因此仿照它提供的图片的代码修改底层 K210 代码去适应它提供的模型)。</li>
+</ol>
+<h3>其他编译方式参见 PaddlePi-K210 开发环境搭建指南</h3>
+<hr />
+<hr />
+<h2><strong>模型训练代码完全来源于<a href="https://github.com/zhen8838/K210_Yolo_framework">K210_Yolo_framework</a>，为了能在 win 上训练模型，你需要简单修改它的代码，我已经完成修改可以在 win 上运行</strong></h2>
+<h2>你可以直接使用我修改后的代码<a href="https://github.com/SEASKY-Master/Yolo-for-k210">Yolo-for-k210</a>,或者你尝试使用原来的代码自行修改</h2>
+<h3>个人博客：<a href="https://seasky-master.github.io/SEASKY-Master/">https://seasky-master.github.io/SEASKY-Master/</a></h3>
+<h3>K210 YOLO V3 框架</h3>
+<h2>这是一个清晰的、可扩展的 yolo v3 框架。</h2>
+<ol>
+<li>Real-time display recall and precision</li>
+<li>Easy to use with other datasets</li>
+<li>Support multiple model backbones and expand more</li>
+<li>Support n number of output layers and m anchors</li>
+<li>Support model weight pruning</li>
+<li>Portable model to kendryte K210 chip</li>
+</ol>
+<h2>VOC 数据集训练-开发环境</h2>
+<p>原作者在 ubuntu 18.04 - Python 3.7.1 中进行测试 ,
+本人尝试可以在 windows 正常训练,你需要安装 requirements.txt 中的内容
+优先安装 <code>tensorflow-gpu==1.15.0</code>,如果你的电脑不支持 GPU 版本，请安装 <code>tensorflow==1.15.0</code></p>
+<img src="images/tensorflow.jpg"/>
+<p>请在 <code>tensorflow</code> 环境搭建完成后继续向下操作，tensorflow 环境搭建参见<code>百度</code></p>
+<p>然后使用<code>pip install -r requirements.txt</code>安装其他工具</p>
+<h2>准备数据集</h2>
+<p>首次使用（确保你获取到了数据集）：</p>
+<pre><code>准备数据集
+</code></pre>
+
+<p>数据集须存放在/Train_Image/MyImage
+  <img src="images/数据集结构.png">
+然后使用python生成需要的文件</p>
+<p>datamaking.py</p>
+<pre><code>仅根据Annotations和JPEGImages目录
+生成pscalvoc.txt、train.txt、val.txt、test.txt
+同时会删除多余或不配对的 .xml .jpg 运行时间较长
+数据按7：2：1分配
+</code></pre>
+
+<p>datamakingv2.py</p>
+<pre><code>仅根据Annotations目录下文件的.xml文件生成需要的pscalvoc.txt、train.txt、val.txt、test.txt
+运行时间较短，适用于确认数据集一一对应的情况
+</code></pre>
+
+<p>生成label</p>
+<pre><code>python voc_label.py
+cat  MyImage_train.txt MyImage_val.txt&gt; train.txt   Linux使用此命令
+type MyImage_train.txt MyImage_val.txt&gt; train.txt     windowns使用此命令
+</code></pre>
+
+<p>注意：</p>
+<ul>
+<li>
+<p>改变路径后重新训练需从<code>python voc_label.py</code>从新开始</p>
+</li>
+<li>
+<p>win 不支持 wget，因此你需要安装相关工具，或直接在浏览器中输入 wget 后面的网址，下载后复制到改目录</p>
+</li>
+</ul>
+<p>然后将 IMG 路径和注释合并到一个 NPY 文件</p>
+<pre><code>python make_voc_list.py train.txt data/voc_img_ann.npy
+</code></pre>
+
+<h2>生成 anchors</h2>
+<p>加载注释生成 anchors(LOW 和 HIGH 视数据集的分布而定)：</p>
+<pre><code>make anchors DATASET=voc ANCNUM=3 LOW=&quot;0.0 0.0&quot; HIGH=&quot;1.0 1.0&quot;
+</code></pre>
+
+<p>当你成功的时候，你会看到这样以下内容：</p>
+<img src="./images/Figure_1.png"/>
+<p>注：结果是随机的。当你有错误时，就重新运行它。</p>
+<p>如果要使用自定义数据集，只需编写脚本并生成<code>data/{dataset_name}_img_ann.npy</code>，然后使用<code>make anchors DATASET=dataset_name</code>。更多选项请参见<code>python3 ./make_anchor_list.py -h</code></p>
+<p>如果要更改输出层的数目，则应修改 OUTSIZE 在 Makefile</p>
+<h2>下载预训练模型</h2>
+<p>你必须下载您想要训练的模型权重，因为默认情况下会加载训练前的权重。把文件放进./data 目录。</p>
+<table>
+<thead>
+<tr>
+	<th><code>MODEL</code></th>
+	<th><code>DEPTHMUL</code></th>
+	<th>Url</th>
+	<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>yolo_mobilev1</td>
+	<td>0.5</td>
+	<td><a href="https://drive.google.com/open?id=1SmuqIU1uCLRgaePve9HgCj-SvXJB7U-I">google drive</a></td>
+	<td><a href="https://share.weiyun.com/59nnvtW">weiyun</a></td>
+</tr>
+<tr>
+	<td>yolo_mobilev1</td>
+	<td>0.75</td>
+	<td><a href="https://drive.google.com/open?id=1BlH6va_plAEUnWBER6vij_Q_Gp8TFFaP">google drive</a></td>
+	<td><a href="https://share.weiyun.com/5FgNE0b">weiyun</a></td>
+</tr>
+<tr>
+	<td>yolo_mobilev1</td>
+	<td>1.0</td>
+	<td><a href="https://drive.google.com/open?id=1vIuylSVshJ47aJV3gmoYyqxQ5Rz9FAkA">google drive</a></td>
+	<td><a href="https://share.weiyun.com/516LqR7">weiyun</a></td>
+</tr>
+<tr>
+	<td>yolo_mobilev2</td>
+	<td>0.5</td>
+	<td><a href="https://drive.google.com/open?id=1qjpexl4dZLMtd0dX3QtoIHxXtidj993N">google drive</a></td>
+	<td><a href="https://share.weiyun.com/5BwaRTu">weiyun</a></td>
+</tr>
+<tr>
+	<td>yolo_mobilev2</td>
+	<td>0.75</td>
+	<td><a href="https://drive.google.com/open?id=1qSM5iQDicscSg0MYfZfiIEFGkc3Xtlt1">google drive</a></td>
+	<td><a href="https://share.weiyun.com/5RRMwob">weiyun</a></td>
+</tr>
+<tr>
+	<td>yolo_mobilev2</td>
+	<td>1.0</td>
+	<td><a href="https://drive.google.com/open?id=1Qms1BMVtT8DcXvBUFBTgTBtVxQc9r4BQ">google drive</a></td>
+	<td><a href="https://share.weiyun.com/5dUelqn">weiyun</a></td>
+</tr>
+<tr>
+	<td>tiny_yolo</td>
+	<td></td>
+	<td><a href="https://drive.google.com/open?id=1M1ZUAFJ93WzDaHOtaa8MX015HdoE85LM">google drive</a></td>
+	<td><a href="https://share.weiyun.com/5413QWx">weiyun</a></td>
+</tr>
+<tr>
+	<td>yolo</td>
+	<td></td>
+	<td><a href="https://drive.google.com/open?id=17eGV6DCaFQhVoxOuTUiwi7-v22DAwbXf">google drive</a></td>
+	<td><a href="https://share.weiyun.com/55g6zHl">weiyun</a></td>
+</tr>
+</tbody>
+</table>
+<p>注：mobilev 不是原创的，原作者有修改它适合 K210</p>
+<h2>Train</h2>
+<p>使用 Mobileenet 时，需要指定 DEPTHMUL 参数。 使用 tiny yolo 或 yolo 你不需要设定 DEPTHMUL.</p>
+<ol>
+<li>
+<p>集MODEL和DEPTHMUL开始训练：
+    make train MODEL=yolo_mobilev1 DEPTHMUL=0.75 MAXEP=10 ILR=0.001 DATASET=voc CLSNUM=20 IAA=False BATCH=8</p>
+</li>
+<li>
+<p>集CKPT继续训练:</p>
+<pre><code>make train MODEL=yolo_mobilev1 DEPTHMUL=0.75 MAXEP=10 ILR=0.001 DATASET=voc CLSNUM=20 IAA=False BATCH=8 CKPT=log/xxxxxxxxx/yolo_model.h5
+</code></pre>
+
+</li>
+<li>
+<p>集IAA为了增加数据:</p>
+<pre><code>make train MODEL=xxxx DEPTHMUL=xx MAXEP=10 ILR=0.0001 DATASET=voc CLSNUM=20 IAA=True BATCH=16 CKPT=log/xxxxxxxxx/yolo_model.h5
+</code></pre>
+
+</li>
+<li>
+<p>使用 tensorboard:</p>
+<pre><code>tensorboard --logdir log
+</code></pre>
+
+</li>
+</ol>
+<h2>推论</h2>
+<pre><code>make inference MODEL=yolo_mobilev1 DEPTHMUL=0.75 CLSNUM=20 CKPT=log/xxxxxx/yolo_model.h5 IMG=data/people.jpg
+</code></pre>
+
+<p>你可以尝试我的模型：</p>
+<pre><code>make inference MODEL=yolo_mobilev1 DEPTHMUL=0.75 CKPT=asset/yolo_model.h5 IMG=data/people.jpg
+</code></pre>
+
+<img src="./images/people_res.jpg" width = "800"/>
+<pre><code>make inference MODEL=yolo_mobilev1 DEPTHMUL=0.75 CKPT=asset/yolo_model.h5 IMG=data/dog.jpg
+</code></pre>
+
+<img src="./images/dog_res.jpg" width = "800"/>
+<p>注：由于 anchors 是随机生成的，如果您的结果与上面的图像不同，你只需要加载这个模型并继续训练一段时间。</p>
+<p>更多选项请参见<code>python3 ./keras_inference.py -h</code></p>
+<h2>修剪模型</h2>
+<pre><code>make train MODEL=xxxx MAXEP=1 ILR=0.0003 DATASET=voc CLSNUM=20 BATCH=16 PRUNE=True CKPT=log/xxxxxx/yolo_model.h5 END_EPOCH=1
+</code></pre>
+
+<p>训练结束时，将模型保存为 log/xxxxxx/yolo_prune_model.h5.</p>
+<h2>Freeze</h2>
+<pre><code>toco --output_file mobile_yolo.tflite --keras_model_file log/xxxxxx/yolo_model.h5
+</code></pre>
+
+<p>现在你有了 mobile_yolo.tflite</p>
+<h2>转换 Kmodel</h2>
+<p>Please refer <a href="https://github.com/kendryte/nncase/tree/v0.1.0-rc5"><code>nncase v0.1.0-RC5 example</code></a></p>
+<pre><code>ncc mobile_yolo.tflite mobile_yolo.kmodel -i tflite -o k210model --dataset nncase_images
+</code></pre>
+
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
