@@ -404,32 +404,29 @@
 			<div id="Main_to_line1">
 				<div class="readme_test">
 					<div class="xiangmu">
-						<font style="float:left"><b>RoboMaster2019机甲大师赛分区赛</b></font>
-						<font style="float:right"><b>2018-至今</b></font>
+						<font style="float:left"><b>RoboMaster跃鹿战队</b></font>
+						<font style="float:right"><b>2019-2021</b></font>
 					</div>
 					<div style="clear:both;"></div>
 					<ul>
-						<li><b>步兵机器人&哨兵机器人(2019-2021)</b>
+						<li><b>项目简介</b>
 							<ul>
-								<li>独立设计BMI088硬件与软件并应用于步兵车实现小陀螺；</li>
-								<li>独立完成基于双MOS管的同步BUCK完成超级电容控制器的硬件以及软件设计（输入缓启动，过压，防反接，裁判系统掉电输出自动掉电），以及完成超级电容模组的硬件设计，并应用于步兵车和英雄，实现底盘功率控制；</li>
-								<li>使用串口、CRC和RoboMaster裁判系统进行通信，并制定湖南大学RoboMaster团队统一的串口通信协议，含CRC8、CRC16数据校验，并基于该协议完成和视觉的全双工串口通信，并完成视觉控制；</li>
-								<li>卡弹算法的设计，在卡弹时采取来回拨的方式避免卡弹，直到正向不卡弹；</li>
-								<li>设计24V-19V（5A) DCDC模块用于给视觉供电，并应用于步兵车和其他兵种；</li>
-								<li>使用SPI和ADC驱动自制OLED，并编写OLED的GUI界面程序；</li>
-								<li>独立完成步兵车底层接口配置(IIC、CAN、USART、PWM、GPIO等),以及独立完成步兵车整车设计。</li>
-								<li>基于STM32F427IIH6设计类似于A板的控制板，所有接口验证完成，由于修改了IO口配置，目前未移植到该控制板。</li>
+								<li>大疆举办的RoboMaster比赛，参与RoboMaster比赛三年，并担任一年电控组组长。</li>
 							</ul>
 						</li>
-						<li><b>哨兵机器人（2018-2020）</b>
+						<li><b>我的职责</b>
 							<ul>
-								<li>使用RNG随机数和北醒激光(IIC)控制电机位置完成随机移动；</li>
-								<li>独立完成步兵底层接口以及整车程序。</li>
-							</ul>
-						</li>
-						<li><b>其他任务</b>
-							<ul>
-								<li>完成湖南大学电控组硬件和软件培训</li>
+								<li>基于0.96寸OLED裸屏以及五向按键完成OLED的二层PCB设计；</li>
+								<li>基于STM32F429IGT6完成V1版本自研RoboMaster控制板设计；</li>
+								<li>基于LM25116、NMOS完成24V转12V的BUCK电路设计；</li>
+								<li>基于STM32F103C8T6、INA226完成功率测量模块的设计；</li>
+								<li>基于STM32F405RGT6、UCC27211、INA226、NMOS等完成以同步BUCK为核心的超级电容控制板设计，并应用与需要兵种；</li>
+								<li>完成超级电容均压板的设计，完成超级电容模组，并应用与需要兵种；</li>
+								<li>完成24V转19V5A的BUCK电路设计，并用于视觉PC供电；</li>
+								<li>基于INA226和STM32F405RGT6的可用于哨兵测量底盘功率底盘控制板的四层PCB设计；</li>
+								<li>基于STM32F427IIH6以四层板的方式复现RoboMaster
+									A板大部分功能（删除12V输出功能），经过测试，复现A板基本功能，完成V2版本自研RoboMaster控制板设计；</li>
+								<li>基于STM32F405RGT6、BMI088完成六轴姿态陀螺仪的设计，并应用于各个兵种的小陀螺。</li>
 							</ul>
 						</li>
 					</ul>
@@ -441,9 +438,20 @@
 					</div>
 					<div style="clear:both;"></div>
 					<ul>
-						<li>使用STM32F405RGT6读取BMI088原始数据，并使用Mahony进行姿态解算；</li>
-						<li>使用USART(无线模式-蓝牙模块)和USB-HID和电脑通信；</li>
-						<li>使用BMI088的角速度数据，模拟鼠标的运动，实现空中鼠标。</li>
+						<li><b>项目简介</b>
+							<ul>
+								<li>
+									本项目基于无线通信技术与九轴陀螺仪姿态融合技术实现了远程电子教鞭，能极大的提高教学质量。
+								</li>
+							</ul>
+						</li>
+						<li><b>我的职责</b>
+							<ul>
+								<li>
+									负责该项目的硬件设计，V1版本基于STM32F103C8T6与HC05蓝牙模块通信作为接收端连接电脑，并基于STM32F407与九轴陀螺仪完成电子教鞭发送端的设计;V2版本基于STM32F405RGT6、BMI088、XM-04-HID-KM完成电子教鞭设计。
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="readme_test">
@@ -453,10 +461,50 @@
 					</div>
 					<div style="clear:both;"></div>
 					<ul>
-						<li>基于STM32F103+51单片机智能循迹小车程序编写，以及基于51单片机日历-时钟系统程序编写；</li>
-						<li>基于SCL3300+STM32F103实现高精度倾角测量程序编写；</li>
-						<li>基于STM32F405RGT6的有线+无线机械键盘硬件、软件设计，使用PWM控制WS2812B灯珠实现RGB灯效，可以对应控制每个灯的颜色；使用按键扫描方式检测按键，包括长短按识别，使用USB-HID或无线HID蓝牙模块和电脑通信，实现键盘功能，使用体验和普通键盘无任何区别，长时间测试稳定。
+						<Li>使用洞洞板和STC89C51、LED二极管、阻容元件等焊接51最小系统以及8*8LED点阵</Li>
+						<Li>基于BTN7971B完成双路H桥硬件设计；</Li>
+						<li>基于SCL330、STM32F103实现高精度倾角计的二层PCB设计；</li>
+						<li>基于STM32F405RGT6、WS2812B、XM-04-HID-KM等完成机械键盘的PCB设计；</li>
+						<li>基于STM32F405RGT6、DRV8301、NMOS实现开源VESC6电调的硬件设计，并完成检验；</li>
+						<li>基于STM32F405RGT6、双DRV8301、NMOS实现ODrive FOC开源电机控制器的PCB设计，并改良原理图设计，目前仅完成一路电机控制的闭环。</li>
+					</ul>
+				</div>
+				<div class="readme_test">
+					<div class="xiangmu">
+						<font style="float:left"><b>长沙新媒体大会大疆展区</b></font>
+						<font style="float:right"><b>2020/10-2020/11</b></font>
+					</div>
+					<div style="clear:both;"></div>
+					<ul>
+						<li><b>项目简介</b>
+							<ul>
+								<li>
+									新媒体大会-大疆教育展的RP、TT编队演示。 </li>
+							</ul>
 						</li>
+						<li><b>我的职责</b>
+							<ul>
+								<li>基于RoboMaster SDK使用Python 对RoboMaster TT编写时长不超过一分中的编队演示，项目中简单修改了SDK中的部分代码；</li>
+								<li>基于RoboMaster SDK使用Python 对RobMaster EP编写时长不超过三分钟的编队演示；</li>
+								<li>由于现场WIFI环境复杂，使用图形化编程临时编写EP 离线程序，即观众互动程序。</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="readme_test">
+					<div class="xiangmu">
+						<font style="float:left"><b>非硬件相关</b></font>
+						<font style="float:right"><b>2017-至今</b></font>
+					</div>
+					<div style="clear:both;"></div>
+					<ul>
+						<li>51巡线小车程序设计；</li>
+						<li>INA226功率测量模块程序设计；</li>
+						<li>基于CRC8算法实现湖南大学电控组串口通信协议制定，视觉通信协议制定；</li>
+						<li>基于Mahony完成BMI088姿态传感器程序设计；</li>
+						<li>超级电容控制器程序设计；</li>
+						<li>SCL330高精度倾角计程序设计</li>
+						<li>独立完成RoboMaster 步兵车程序设计；</li>
 					</ul>
 				</div>
 				<div class="readme_test">
@@ -466,20 +514,10 @@
 					</div>
 					<div style="clear:both;"></div>
 					<ul>
+						<li>使用Altium Designer软件进行多款PCB设计，并使用钢网焊完成实物制作，较熟练的使用PADS进行PCB设计。</li>
 						<li>使用C语言开发STM32程序，使用Html5编写个人博客，使用Python语言运行Openmv，了解汇编语言；</li>
 						<li>使用MDK软件完成基于STM32的ARM构架CPU、FreeRTOS嵌入式实时操作系统搭建并完成完整步兵、哨兵机器人等程序编写；</li>
 						<li>使用RISC-V-K210官方SDK开发K210完成yolo 20分类目标检测，了解Linux；</li>
-						<li>使用Altium Designer软件进行多款PCB设计，较熟练的使用PADS进行PCB设计。</li>
-					</ul>
-				</div>
-				<div class="readme_test">
-					<div class="xiangmu">
-						<font style="float:left"><b>湖南大学数学建模竞赛</b></font>
-						<font style="float:right"><b>2018/4/29-2018/5/1</b></font>
-					</div>
-					<div style="clear:both;"></div>
-					<ul>
-						<li> 方案提出，方案策划，方案解决。 </li>
 					</ul>
 				</div>
 			</div>
